@@ -193,7 +193,9 @@ FROM Clients;
 CLOSE SYMMETRIC KEY RefinedStackKey;
 
 
-
+BACKUP DATABASE RefinedStackDB 
+TO DISK = 'C:\Users\SWETHA MACHA\Documents\RefinedStackDB.bak' 
+WITH FORMAT, INIT, NAME = 'Daily Backup';
 
 
 
